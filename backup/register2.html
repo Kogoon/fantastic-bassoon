@@ -1,0 +1,22 @@
+<form method="post">
+    {{ form.csrf_token }}
+    <div>
+        {{ form.name.label() }}
+        {{ form.name() }}
+    </div>
+      <div>
+          {{ form.email.label() }}
+          {{ form.email() }}
+      </div>
+      <div>
+          {{ form.password.label() }}
+          {{ form.password() }}
+      </div>
+      <div>
+          {{ form.password_confirm.label() }}
+          {{ form.password_confirm() }}
+      </div>
+    <div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </div>
+  </form>
