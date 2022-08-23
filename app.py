@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from flask import Flask, request, url_for, redirect, render_template
 from controller.authcontroller.forms import RegisterForm
 #from flask_login import LoginManager 
@@ -40,7 +41,6 @@ def login():
 #     query_string = urlencode(request.args)
 
 #     return redirect(url_for('auth.login', next=f'{request.path}?{query_string}'))
-
 
 
 

@@ -27,3 +27,23 @@ False
 True
 ```
 
+
+## Generate SECRET KEY
+``` bash
+$ python -c 'import secrets; print(secrets.token_hex())'
+'192b9bdd22ab9ed4d12e236c78afcb9a393ec15f71bbf5dc987d54727823bcbf'
+```
+
+## pip 
+* mysql_client error
+``` bash
+$ sudo yum install -y python3-devel mysql-devel
+```
+
+
+## flask db
+``` bash 
+flask db init
+flask db migrate
+flask db upgrade
+```
