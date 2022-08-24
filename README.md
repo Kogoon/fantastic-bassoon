@@ -1,4 +1,4 @@
-# fantastic-bassoon
+# fantastic-bassoon (Memo)
 Final Project
 
 
@@ -46,4 +46,11 @@ $ sudo yum install -y python3-devel mysql-devel
 flask db init
 flask db migrate
 flask db upgrade
+```
+
+
+## mysql 
+``` text
+# mysql://<username>:<password>@<host>:<port>/<db_name>
+engine = create_engine('mysql://username:password@your_host/your_dbname')
 ```

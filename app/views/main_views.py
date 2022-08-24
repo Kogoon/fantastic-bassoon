@@ -18,9 +18,7 @@ def load_logged_in_user():
     if user_id is None:
         g.user = None
     else:
-        print("heeeee")
         g.user = UserModel.query.get(user_id)
-        print("hello")
 
 
 @bp.route('/hello', methods=['GET'])

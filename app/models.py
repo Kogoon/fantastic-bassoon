@@ -18,6 +18,7 @@ class UserMixin:
     alergy_cru = db.Column(db.Boolean, nullable=True)
     alergy_nut = db.Column(db.Boolean, nullable=True)
     alergy_pch = db.Column(db.Boolean, nullable=True)
+    role_admin = db.Column(db.Boolean, default=False)
 
 
 class UserModel(UserMixin, flask_login.UserMixin, db.Model):
